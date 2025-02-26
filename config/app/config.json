@@ -1,0 +1,169 @@
+{
+    "iris": {
+        "laycanStartInterval": 5
+    },
+    "requiredContractDocIds": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        17
+    ],
+    "mail": {
+        "service": "gmail",
+        "user": "traderebootdev@gmail.com",
+        "pass": "wdvqfcclbcbjfjus"
+    },
+    "host": "localhost",
+    "port": 3212,
+    "cors": {
+        "origin": "*",
+        "credentials": false
+    },
+    "cors2": {
+        "origin": "*",
+        "credentials": false
+    },
+    "dbUrl": "http://localhost:3420/",
+    "jwtSecret": "some_secret",
+    "jwtExpireTime": 86400,
+    "queryPeers": "peer1_admin",
+    "invokePeers": [
+        "peer1_admin",
+        "peer2_admin",
+        "peer1_member",
+        "peer2_member"
+    ],
+    "chaincodeName": "fobcc",
+    "keysDir": "../keys",
+    "hfc": {
+        "channelName": "fobchannel",
+        "CC_SRC_PATH": "../fob.chaincode",
+        "eventWaitTime": "30000",
+        "admins": {
+            "admin": {
+                "username": "admin",
+                "secret": "adminpw"
+            },
+            "member": {
+                "username": "admin",
+                "secret": "adminpw"
+            }
+        },
+        "asLocalHost": false
+    },
+    "memberOrgName": "member",
+    "adminUsername": "admin@fob.com",
+    "adminOrgName": "admin",
+    "adminPassword": "pass",
+    "adminTypeofUser": "admin",
+    "adminTypeId": "1",
+    "fabricOrgsConfig": {
+        "member": {
+            "walletPath": "C:/Users/ganho/tradereboot/wallet/member",
+            "adminCaName": "admin",
+            "adminPassword": "adminpw",
+            "connectionProfile": "C:/Users/ganho/tradereboot/fob.web_server/config/connection-profiles/connection-member.json",
+            "ca": "ca_member",
+            "msp": "memberMSP",
+            "affiliation": "org1.department1"
+        },
+        "admin": {
+            "walletPath": "C:/Users/ganho/tradereboot/wallet/admin",
+            "adminCaName": "admin",
+            "adminPassword": "adminpw",
+            "connectionProfile": "C:/Users/ganho/tradereboot/fob.web_server/config/connection-profiles/connection-admin.json",
+            "ca": "ca_admin",
+            "msp": "adminMSP",
+            "affiliation": "org2.department1"
+        }
+    },
+    "typeofUserList": [
+        "admin",
+        "supplier",
+        "buyer",
+        "logistics",
+        "shipper",
+        "inspector",
+        "vessel_master",
+        "bank",
+        "broker",
+        "employee",
+        "stevedore",
+        "custom_inspector",
+        "insurer",
+        "trader",
+        "producer",
+        "producerAndBuyer",
+        "captain",
+        "carrier_agent",
+        "trade_finance"
+    ],
+    "db_name": "tempdb",
+    "db_user": "root",
+    "db_password": "Dz9Ubv}9OA{dE",
+    "db_host": "35.154.7.134",
+    "db_port": 3306,
+    "loggerLevel": "INFO",
+    "logging": {
+        "logLevel": "INFO",
+        "backups": 5,
+        "maxLogSize": 10485760
+    },
+    "auth": {
+        "jwt": {
+            "secret": "some_secret",
+            "audience": "FOB DEV",
+            "accessMain": {
+                "timeout": 300
+            },
+            "refreshMain": {
+                "timeout": 600
+            }
+        }
+    },
+    "db": {
+        "trade_db_mongo": {
+            "host": "35.154.7.134",
+            "port": 27017,
+            "password": "T6INQ1Vi5UNR",
+            "db_name": "trade_db",
+            "db_user": "trade_user"
+        },
+        "mysqldev": {
+            "host": "localhost",
+            "port": 3306,
+            "user": "rishabh",
+            "password": "fobpw123",
+            "database": "fob_db_dev",
+            "waitForConnections": true,
+            "connectionLimit": 20,
+            "queueLimit": 0
+        },
+        "mysql": {
+            "host": "35.154.7.134",
+            "port": 3306,
+            "user": "root",
+            "password": "Dz9Ubv}9OA{dE",
+            "database": "tempdb",
+            "waitForConnections": true,
+            "connectionLimit": 20,
+            "queueLimit": 0
+        },
+        "redis": {
+            "host": "localhost",
+            "port": 6379
+        },
+        "mysqlttv": {
+            "host": "35.154.7.134",
+            "port": 3306,
+            "user": "root",
+            "password": "Dz9Ubv}9OA{dE",
+            "database": "externalData",
+            "waitForConnections": true,
+            "connectionLimit": 20,
+            "queueLimit": 0
+        }
+    }
+}

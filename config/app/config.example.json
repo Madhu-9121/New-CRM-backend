@@ -1,0 +1,114 @@
+{
+    "iris": {
+        "laycanStartInterval": 5
+    },
+    "requiredContractDocIds": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        17
+    ],
+    "mail": {
+        "service": "gmail",
+        "user": "support@tradereboot.com",
+        "pass": "Support@trade2020"
+    },
+    "host": "localhost",
+    "port": 3212,
+    "cors": {
+        "origin": "*",
+        "credentials": false
+    },
+    "jwtSecret": "some_secret",
+    "jwtExpireTime": 86400,
+    "queryPeers": "peer0.admin.fob.com",
+    "invokePeers": [
+        "peer0.admin.fob.com",
+        "peer1.member.fob.com"
+    ],
+    "chaincodeName": "fob",
+    "keysDir": "../keys",
+    "hfc": {
+        "channelName": "fob-channel",
+        "CC_SRC_PATH": "../../chaincode/go",
+        "eventWaitTime": "30000",
+        "admins": {
+            "admin":{
+                "username": "admin",
+                "secret": "adminpw"
+            },
+            "member": {
+                "username": "admin",
+                "secret": "adminpw"
+            }
+        }
+    },
+    "memberOrgName": "member",
+    "adminUsername": "username",
+    "adminOrgName": "admin",
+    "adminPassword": "pass",
+    "adminTypeofUser": "username",
+    "adminTypeId": "1",
+    "typeofUserList": [
+        "admin",
+        "supplier",
+        "buyer",
+        "logistics",
+        "shipper",
+        "inspector",
+        "vessel_master",
+        "bank",
+        "broker",
+        "employee",
+        "stevedore",
+        "custom_inspector",
+        "insurer",
+        "trader",
+        "producer",
+        "producerAndBuyer",
+        "captain",
+        "carrier_agent",
+        "trade_finance"
+    ],
+    "db_name": "fob_db",
+    "db_user": "username",
+    "db_password": "pass",
+    "db_host": "dev.fob.sofodev.co",
+    "db_port": 3306,
+    "loggerLevel": "INFO",
+    "logging": {
+        "logLevel": "INFO",
+        "backups": 5,
+        "maxLogSize": 10485760
+    },
+    "auth": {
+        "jwt": {
+            "secret": "some_secret",
+            "audience": "FOB DEV",
+            "accessMain": {
+                "timeout": 300
+            },
+            "refreshMain": {
+                "timeout": 600
+            }
+        }
+    },
+    "db": {
+        "mysql":{
+            "host": "dev.fob.sofodev.co",
+            "port": 3307,
+            "user": "root",
+            "password": "pass",
+            "database": "fob_db",
+            "waitForConnections": true,
+            "connectionLimit": 20,
+            "queueLimit": 0
+        },
+        "redis":{
+            "host": "localhost",
+            "port": 6379
+        }
+    }
+}
